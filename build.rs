@@ -17,7 +17,6 @@ fn main() {
     cc::Build::new()
         .cpp(true)
         .flag("-std=c++14")
-        .flag("-Wno-missing-braces")
         .include(core_src_dir)
         .files(core_sources)
         .compile("zxing_core");
